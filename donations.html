@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donations | PrayForUs</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">PrayForUs</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="church_listings.html">Find a Church</a>
+            <a href="#">About Us</a>
+            <a href="signup.html" class="btn">Sign Up</a>
+            <a href="login.html" class="btn">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="donationForm">
+            <h1>Make a Donation</h1>
+            <form>
+                <label for="amount">Donation Amount:</label>
+                <input type="number" id="amount" name="amount" min="1" placeholder="Enter donation amount">
+
+                <label for="donationType">Donation Type:</label>
+                <select id="donationType" name="donationType">
+                    <option value="one-time">One-Time</option>
+                    <option value="recurring">Recurring</option>
+                </select>
+
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod">
+                    <!-- Options will be populated from user's saved payment methods -->
+                </select>
+
+                <input type="submit" value="Donate">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#" class="scrollToTop">Scroll to Top</a>
+        <nav>
+            <a href="church_listings.html">Find a Church</a>
+            <a href="#">About Us</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+        </nav>
+        <p>&copy; 2022 PrayForUs</p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="donations.js"></script>
+</body>
+</html>

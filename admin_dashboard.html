@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - PrayForUs</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="p-5 bg-blue-500 text-white">
+        <h1 class="text-3xl">PrayForUs Admin Dashboard</h1>
+    </header>
+
+    <main class="p-5">
+        <section id="adminDashboard">
+            <h2 class="text-2xl mb-5">Manage Listings</h2>
+            <button class="btn btn-blue" onclick="manageListings()">Add/Edit/Delete Listings</button>
+
+            <h2 class="text-2xl mb-5 mt-10">Manage Bookings</h2>
+            <button class="btn btn-blue" onclick="manageBookings()">View All Bookings</button>
+
+            <h2 class="text-2xl mb-5 mt-10">Manage Event Registrations</h2>
+            <button class="btn btn-blue" onclick="manageRegistrations()">View All Registrations</button>
+
+            <h2 class="text-2xl mb-5 mt-10">Manage Donations</h2>
+            <button class="btn btn-blue" onclick="manageDonations()">View All Donations</button>
+        </section>
+
+        <section class="mt-10">
+            <h2 class="text-2xl mb-5">Upcoming Booked Services/Events</h2>
+            <div id="calendar"></div>
+        </section>
+    </main>
+
+    <footer class="p-5 bg-blue-500 text-white text-center">
+        <button class="btn btn-blue" onclick="scrollToTop()">Scroll to Top</button>
+        <p class="mt-5">&copy; 2022 PrayForUs</p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="admin_dashboard.js"></script>
+</body>
+</html>
