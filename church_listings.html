@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Listings | PrayForUs</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">PrayForUs</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="church_listings.html">Find a Church</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="signup.html" class="btn">Sign Up</a></li>
+                <li><a href="login.html" class="btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-bar" id="searchBar">
+            <input type="text" placeholder="Find a church near you">
+            <button>Search</button>
+        </section>
+
+        <section class="church-listings" id="churchListing">
+            <!-- Church cards will be dynamically generated here by church_listings.js -->
+        </section>
+    </main>
+
+    <footer>
+        <a href="#" class="scroll-to-top">Scroll to Top</a>
+        <ul>
+            <li><a href="church_listings.html">Find a Church</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p>&copy; 2022 PrayForUs</p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="church_listings.js"></script>
+</body>
+</html>

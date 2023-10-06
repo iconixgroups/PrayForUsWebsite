@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | PrayForUs</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">PrayForUs</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="church_listings.html">Find a Church</a>
+            <a href="#">About Us</a>
+            <a href="login.html" class="button">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="registration-form" id="registrationForm">
+            <h2>Register</h2>
+            <form action="registration.js" method="POST">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <input type="submit" value="Register">
+            </form>
+        </section>
+
+        <section class="otp-verification" id="otpVerification" style="display: none;">
+            <h2>Verify Your Email</h2>
+            <form action="otp_verification.js" method="POST">
+                <label for="otp">Enter the OTP sent to your email</label>
+                <input type="text" id="otp" name="otp" required>
+
+                <input type="submit" value="Verify">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#" class="scroll-to-top">Scroll to Top</a>
+        <nav>
+            <a href="church_listings.html">Find a Church</a>
+            <a href="#">About Us</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+        </nav>
+        <p>&copy; 2022 PrayForUs</p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="registration.js"></script>
+    <script src="otp_verification.js"></script>
+</body>
+</html>
