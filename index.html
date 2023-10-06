@@ -10,25 +10,22 @@
 </head>
     <link rel="icon" href="favicon.ico">
 <body>
-    <header class="header">
+    <header class="header sticky">
         <div class="logo">PrayForUs</div>
         <nav class="nav">
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="church_listings.html">Find a Church</a>
             <a href="about.html">About Us</a>
             <a href="signup.html" class="btn">Sign Up</a>
             <a href="login.html" class="btn">Login</a>
         </nav>
     </header>
-
-    <section class="hero">
-        <img src="people_praying.jpg" alt="People praying together">
+    
+    <section class="hero" style="background-image: url('people_praying.jpg');">
         <h1>Connect with Churches Through Prayer</h1>
         <p>PrayForUs makes it easy to connect with churches, attend services, register for events, and donate - all in one place.</p>
-    </section>
-
-    <section class="search">
         <input type="text" id="searchBar" placeholder="Find a church near you">
+        <a href="signup.html" class="btn cta">Join Us Now</a>
     </section>
 
     <section class="about">
@@ -53,6 +50,11 @@
             <a href="terms.html">Terms</a>
             <a href="contact.html">Contact</a>
         </nav>
+        <div class="social-media">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
         <p>&copy; 2022 PrayForUs</p>
     </footer>
 </body>
